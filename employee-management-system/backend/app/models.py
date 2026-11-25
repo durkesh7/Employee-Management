@@ -1,8 +1,14 @@
 from datetime import date, datetime
+<<<<<<< HEAD
 from decimal import Decimal
 
 from sqlalchemy import CheckConstraint, Date, DateTime, ForeignKey, Numeric, String, UniqueConstraint, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+=======
+
+from sqlalchemy import CheckConstraint, Date, DateTime, String, func
+from sqlalchemy.orm import Mapped, mapped_column
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
 
 from .database import Base
 
@@ -33,6 +39,7 @@ class Employee(Base):
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
     )
+<<<<<<< HEAD
     salaries: Mapped[list["SalaryDetail"]] = relationship(
         back_populates="employee", cascade="all, delete-orphan"
     )
@@ -81,3 +88,5 @@ class Student(Base):
     address: Mapped[str] = mapped_column(String(255))
     admission_date: Mapped[date] = mapped_column(Date)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+=======
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9

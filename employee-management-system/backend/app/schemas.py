@@ -1,5 +1,6 @@
 import re
 from datetime import date, timedelta
+<<<<<<< HEAD
 from decimal import Decimal
 from typing import Literal
 
@@ -8,6 +9,14 @@ from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator, mo
 PHONE_PATTERN = re.compile(r"^\+?[0-9]{10,15}$")
 MIN_JOINING_DATE = date(1990, 1, 1)
 MONTH_PATTERN = re.compile(r"^\d{4}-(0[1-9]|1[0-2])$")
+=======
+from typing import Literal
+
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator
+
+PHONE_PATTERN = re.compile(r"^\+?[0-9]{10,15}$")
+MIN_JOINING_DATE = date(1990, 1, 1)
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
 
 
 class LoginRequest(BaseModel):
@@ -94,6 +103,7 @@ class EmployeeStats(BaseModel):
     total: int
     active: int
     inactive: int
+<<<<<<< HEAD
 
 
 class StudentIn(BaseModel):
@@ -186,3 +196,5 @@ class SalaryOut(BaseModel):
     allowances: float
     deductions: float
     net_salary: float
+=======
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9

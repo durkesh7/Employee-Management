@@ -2,12 +2,15 @@
 
 Full-stack employee management app with JWT authentication, CRUD, search, filters and server-side pagination.
 
+<<<<<<< HEAD
 ## What's new: sidebar layout
 - Collapsible left sidebar (grouped menu: Dashboard, Employees, Students, Salary Details), mobile drawer, dark mode toggle
 - New Dashboard page (`/`) with stats, department chart, status donut, 6-month payroll trend and recent joiners
 - New API: `GET /dashboard/summary`
 - Employee list moved to `/employees`; students at `/students`
 
+=======
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
 ## Technology Stack
 - **Frontend:** React 18 (Vite), React Router, Axios, plain responsive CSS
 - **Backend:** FastAPI (Python 3.12), SQLAlchemy 2, Pydantic v2, PyJWT, bcrypt
@@ -128,6 +131,7 @@ Live URLs: Frontend: _add here_ · Backend: _add here_ · Repo: _add here_
 
 ## Libraries Used
 FastAPI, Uvicorn, PyPostgres, Pydantic, PyJWT, bcrypt, React, React Router, Axios, Vite.
+<<<<<<< HEAD
 
 
 ## Student Information module
@@ -159,3 +163,5 @@ Fields: employee, month (YYYY-MM), basic salary, HRA, allowances, deductions. **
 | GET | `/salaries/{id}` | Get one record | 200 |
 | PUT | `/salaries/{id}` | Update a record | 200 |
 | DELETE | `/salaries/{id}` | Delete a record | 200 |
+=======
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9

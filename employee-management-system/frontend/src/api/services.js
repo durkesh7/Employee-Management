@@ -14,6 +14,7 @@ export const employeeService = {
   stats: () => api.get("/employees/stats").then((r) => r.data),
   departments: () => api.get("/employees/departments").then((r) => r.data),
 };
+<<<<<<< HEAD
 
 export const studentService = {
   list: () => api.get("/students").then((r) => r.data),
@@ -34,3 +35,5 @@ export const salaryService = {
 export const dashboardService = {
   summary: () => api.get("/dashboard/summary").then((r) => r.data),
 };
+=======
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9

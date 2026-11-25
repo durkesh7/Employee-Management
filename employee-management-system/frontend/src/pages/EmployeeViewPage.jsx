@@ -28,7 +28,11 @@ export default function EmployeeViewPage() {
     <div className="card form-card">
       <div className="toolbar">
         <h2>Employee Details</h2>
+<<<<<<< HEAD
         <Link to="/employees" className="btn btn-secondary">
+=======
+        <Link to="/" className="btn btn-secondary">
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
           Back
         </Link>
       </div>
@@ -45,9 +49,12 @@ export default function EmployeeViewPage() {
             ))}
           </dl>
           <div className="form-actions">
+<<<<<<< HEAD
             <Link to={`/salaries/new?employee_id=${id}`} className="btn btn-secondary">
               Add Salary
             </Link>
+=======
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
             <Link to={`/employees/${id}/edit`} className="btn btn-primary">
               Edit
             </Link>

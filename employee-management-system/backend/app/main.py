@@ -10,8 +10,13 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from .config import settings
 from .database import Base, SessionLocal, engine
+<<<<<<< HEAD
 from .models import User, Student
 from .routers import auth, dashboard, employees, salaries, students
+=======
+from .models import User
+from .routers import auth, employees
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
 from .security import hash_password
 
 logger = logging.getLogger("employee-api")
@@ -70,6 +75,7 @@ async def unhandled_error_handler(_: Request, exc: Exception):
 
 app.include_router(auth.router)
 app.include_router(employees.router)
+<<<<<<< HEAD
 app.include_router(students.router)
 app.include_router(salaries.router)
 app.include_router(dashboard.router)
@@ -79,6 +85,11 @@ app.include_router(employees.router, prefix="/api", include_in_schema=False)
 app.include_router(students.router, prefix="/api", include_in_schema=False)
 app.include_router(salaries.router, prefix="/api", include_in_schema=False)
 app.include_router(dashboard.router, prefix="/api", include_in_schema=False)
+=======
+# The same routes are also served under /api/..., so a frontend using either style works.
+app.include_router(auth.router, prefix="/api", include_in_schema=False)
+app.include_router(employees.router, prefix="/api", include_in_schema=False)
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
 
 
 @app.get("/", tags=["Health"])

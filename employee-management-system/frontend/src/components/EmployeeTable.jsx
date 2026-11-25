@@ -26,7 +26,10 @@ export default function EmployeeTable({ employees, onDelete }) {
             <td data-label="Actions" className="actions">
               <Link to={`/employees/${e.id}`}>View</Link>
               <Link to={`/employees/${e.id}/edit`}>Edit</Link>
+<<<<<<< HEAD
               <Link to={`/salaries/new?employee_id=${e.id}`}>Salary</Link>
+=======
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
               <button className="link-danger" onClick={() => onDelete(e)}>
                 Delete
               </button>

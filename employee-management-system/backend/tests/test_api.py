@@ -106,6 +106,7 @@ def test_validation_and_ids(client, headers):
     assert client.get("/employees/abc", headers=headers).status_code == 400
     assert client.get("/employees/99999999999", headers=headers).status_code == 400
     assert client.get("/employees?limit=0", headers=headers).status_code == 422
+<<<<<<< HEAD
 
 
 def test_salary_flow(client, headers):
@@ -146,3 +147,5 @@ def test_salary_flow(client, headers):
 
 def test_salary_requires_login(client):
     assert client.get("/salaries").status_code == 401
+=======
+>>>>>>> 2ab088867014c71a7eb167d4554fb79a90cdfac9
